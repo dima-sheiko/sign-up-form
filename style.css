@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');
+
+:root {
+    --main-color: #94e3f2;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(185, 185, 185);
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* Left Side */
+
+.picture {
+    width: 40vw;
+    background-image: url("aside.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    height: auto;
+    position: relative;
+    top: 20vh;
+    gap: 0.3vw;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.iceberg {
+    height: 12vh;
+}
+
+h1 {
+    font-family: 'Skranji', cursive;
+    font-size: 50px;
+    letter-spacing: 4px;
+    color: white;
+}
+
+/* Right Side */
+
+.right {
+    width: 60vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.left {
+    padding-left: 3vw;
+}
+
+.text {
+    font-size: 22px;
+    font-weight: 400;
+    width: 90%;
+}
+
+.remote-text{
+    margin: 40px 0 80px;
+}
+
+/* Form */
+
+.form-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(6, 6, 6);
+    box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 12px;
+    text-transform: uppercase;
+    opacity: 50%;
+}
+
+.form-title{
+    width: 100%;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+input {
+    background-color: rgb(2, 2, 2);
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 3px;
+    color: white;
+    padding: 3px 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--main-color);
+}
+
+button {
+    padding: 13px 40px;
+    margin: 40px 0px;
+    color: var(--main-color);
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: 700;
+    font-size: 20px;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--main-color);
+    color: black;
+    cursor: pointer;
+}
+
+.log-in {
+    display: flex;
+    gap: 5px;
+    font-size: 18px;
+}
+
+a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover {
+    color: white;
+}
