@@ -155,3 +155,48 @@ a {
 a:hover {
     color: white;
 }
+
+/* Media Queries */
+
+@media (max-width: 750px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .form-wrapper {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .iceberg {
+        height: 8vh;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+
+    .text {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .form-title {
+        font-size: 18px;
+    }
+
+    .form-wrapper {
+        width: 50px;
+    }
+
+    button {
+        padding: 13px 20px;
+    }
+
+    .log-in {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+}
